@@ -1,0 +1,10 @@
+{
+  "name": "ApiNPS",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido seguindo a trilha NodeJS da RocketSeat",
+  "main": "index.js",
+  "repository": "https://github.com/BrenonOrtega/NLW4-NodeJS.git",
+  "author": "Brenon Ortega",
+  "license": "MIT",
+  "private": false
+}
