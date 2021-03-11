@@ -1,9 +1,10 @@
-import { request, response } from 'express';
+import { Request, Response } from "express";
+
 class UserController {
     async create(request: Request, response: Response){
-        const body = request.body;
-
-        return request.body
+        const { body } = request;
+        console.log(body);
+        return response.send();
     }
 }
 
