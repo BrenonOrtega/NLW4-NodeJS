@@ -1,17 +1,11 @@
-import 'reflect-metadata';
 import "./database";
-import express, { request, response } from "express";
+import"reflect-metadata";
+import { router } from "./Routes";
+import express from "express";
 
 const app = express();
+const port = 5000;
+app.use(express.json())
+app.use(router);
 
-app.listen(5000, () => console.log("Server running"));
-
-//http://localhost:5000/users
-app.get('/',(request, response) => {
-    return response.json({ message : "Hello Node, I'm from python" });
-});
-
-app.post('/', (request, response) => {
-    return response.json({message : "Salvo com sucesso - by express!"});
-
-});
+app.listen(port, () => console.log(`http://localhost:${port}`));
