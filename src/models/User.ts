@@ -1,5 +1,5 @@
-import { Column, Entity, PrimaryColumn } from "typeorm";
-import {v4 as uuid} from 'uuid'
+import { Column, Entity, PrimaryColumn, CreateDateColumn} from "typeorm";
+import {v4 as uuid} from "uuid";
 import 'reflect-metadata';
 
 
@@ -15,7 +15,7 @@ class User {
     @Column()
     email: string;
 
-    @Column()
+    @CreateDateColumn()
     created_at: Date;
 
     constructor() {
